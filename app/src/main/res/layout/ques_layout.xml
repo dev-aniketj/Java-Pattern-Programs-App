@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ques_cardView_btn"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:clickable="true"
+    android:elevation="4dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardCornerRadius="6dp"
+    tools:ignore="KeyboardInaccessibleWidget,UnusedAttribute">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentTop="true"
+            android:background="@color/cyan_60" />
+
+        <View
+            android:layout_width="4dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:background="@color/cyan_60" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/cyan_60" />
+
+        <View
+            android:layout_width="4dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:background="@color/cyan_60" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/ques_cardView_imageView"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="4dp"
+            android:transitionName="cardView_transition"
+            app:cardCornerRadius="4dp">
+
+            <ImageView
+                android:id="@+id/ques_imageView"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:background="@color/cyan_60"
+                android:transitionName="photo_transition"
+                tools:ignore="ContentDescription" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/ques_no_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="6dp"
+            android:layout_toEndOf="@id/ques_cardView_imageView"
+            android:fontFamily="@font/bree_serif_regular"
+            android:text="Pattern "
+            android:textSize="20sp"
+            android:transitionName="ques_transition"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/n_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ques_no_textView"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="12dp"
+            android:layout_toEndOf="@id/ques_cardView_imageView"
+            android:fontFamily="@font/secular_one_regular"
+            android:text="where n = "
+            android:textSize="18sp"
+            android:transitionName="n_transition"
+            tools:ignore="HardcodedText" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

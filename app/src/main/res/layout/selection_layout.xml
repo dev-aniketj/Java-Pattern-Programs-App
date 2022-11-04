@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/selection_cardView_btn"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:clickable="true"
+    android:elevation="4dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardBackgroundColor="@color/cyan_60"
+    app:cardCornerRadius="8dp"
+    tools:ignore="KeyboardInaccessibleWidget,UnusedAttribute">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="1.5dp"
+        app:cardCornerRadius="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/selection_cardView_imageView"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="4dp"
+                android:transitionName="cardView_transition"
+                app:cardCornerRadius="4dp">
+
+                <ImageView
+                    android:id="@+id/selection_imageView"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:background="@color/cyan_60"
+                    android:transitionName="photo_transition"
+                    tools:ignore="ContentDescription" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/selection_heading_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="12dp"
+                android:layout_toEndOf="@id/selection_cardView_imageView"
+                android:fontFamily="@font/signika_medium"
+                android:letterSpacing="0.025"
+                android:text="Pattern Name"
+                android:textSize="22sp"
+                android:transitionName="heading_transition"
+                tools:ignore="HardcodedText,UnusedAttribute" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.cardview.widget.CardView>

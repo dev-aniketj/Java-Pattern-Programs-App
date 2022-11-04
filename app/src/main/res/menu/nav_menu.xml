@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <item
+        android:title="Main"
+        tools:ignore="HardcodedText">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/home"
+                    android:icon="@drawable/ic_baseline_home_24"
+                    android:title="Home" />
+            </group>
+            <item
+                android:id="@+id/pattern1"
+                android:icon="@drawable/star_pattern_01"
+                android:title="Star Pattern Programs" />
+            <item
+                android:id="@+id/pattern2"
+                android:icon="@drawable/number_pattern_01"
+                android:title="Number Pattern Programs" />
+            <item
+                android:id="@+id/pattern3"
+                android:icon="@drawable/alphabet_pattern_01"
+                android:title="Alphabet Pattern Programs" />
+        </menu>
+    </item>
+    <item
+        android:title="Settings"
+        tools:ignore="HardcodedText">
+        <menu>
+            <item
+                android:id="@+id/share"
+                android:icon="@drawable/ic_baseline_share_24"
+                android:title="Share" />
+            <item
+                android:id="@+id/rate_us"
+                android:icon="@drawable/ic_baseline_rate_review_24"
+                android:title="Rate Us" />
+            <item
+                android:id="@+id/more_apps"
+                android:icon="@drawable/more_apps"
+                android:title="More Apps" />
+        </menu>
+    </item>
+</menu>

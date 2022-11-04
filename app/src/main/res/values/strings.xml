@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Java Pattern Programs</string>
+
+    <!-- Nav String -->
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+
+    <!-- Admob Banner Id -->
+    <string name="banner_ad_unit_id">ca-app-pub-9518849653601742/9756701443</string>
+</resources>

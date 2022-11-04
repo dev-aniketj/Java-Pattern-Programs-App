@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FullViewActivity">
+
+    <TextView
+        android:id="@+id/ques_no_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="3dp"
+        android:fontFamily="@font/bree_serif_regular"
+        android:text="Pattern "
+        android:textSize="20sp"
+        android:transitionName="ques_transition"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/n_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ques_no_textView"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/secular_one_regular"
+        android:text="where n = "
+        android:textSize="18sp"
+        android:transitionName="n_transition"
+        tools:ignore="HardcodedText" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/ques_cardView_imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/n_textView"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="4dp"
+        android:elevation="4dp"
+        android:transitionName="cardView_transition"
+        app:cardCornerRadius="4dp">
+
+        <com.github.chrisbanes.photoview.PhotoView
+            android:id="@+id/ques_imageView"
+            android:layout_width="165dp"
+            android:layout_height="165dp"
+            android:background="@color/cyan_60"
+            android:transitionName="photo_transition"
+            tools:ignore="ContentDescription" />
+
+        <com.github.chrisbanes.photoview.PhotoView
+            android:id="@+id/ques_imageView_ans"
+            android:layout_width="165dp"
+            android:layout_height="165dp"
+            android:background="@color/cyan_60"
+            android:visibility="invisible"
+            tools:ignore="ContentDescription" />
+    </androidx.cardview.widget.CardView>
+
+    <io.github.rosemoe.sora.widget.CodeEditor
+        android:id="@+id/code"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/ques_cardView_imageView"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/show_answer_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ques_cardView_imageView"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/show_answer_bg"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        tools:ignore="KeyboardInaccessibleWidget,UnusedAttribute">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="4dp"
+            android:letterSpacing="0.025"
+            android:text="Show Answer"
+            android:textColor="@color/white"
+            android:textSize="19sp"
+            tools:ignore="HardcodedText" />
+    </RelativeLayout>
+
+</RelativeLayout>
