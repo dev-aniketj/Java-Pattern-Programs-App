@@ -84,7 +84,8 @@ public class FullViewActivity extends AppCompatActivity {
             //GONE Show Answer Button & VISIBLE CodeEditor
             codeEditor.setVisibility(View.VISIBLE);
             codeEditor.startAnimation(fade_in);
-            show_answer_btn.startAnimation(fade_out);
+//            show_answer_btn.startAnimation(fade_out);
+            show_answer_btn.setVisibility(View.GONE);
             /*
             because of codeEditor click, when we click on the same position where the button is
             so it will perform same fade_in() & fade_out() animation.
