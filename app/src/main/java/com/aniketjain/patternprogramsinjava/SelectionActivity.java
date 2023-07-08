@@ -6,11 +6,9 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
-import android.view.Menu;
 import android.view.MenuItem;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
@@ -21,7 +19,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.google.android.material.navigation.NavigationView;
 
 import java.util.ArrayList;
-import java.util.Objects;
 
 public class SelectionActivity extends AppCompatActivity {
 
@@ -45,7 +42,7 @@ public class SelectionActivity extends AppCompatActivity {
         //Main Toolbar set support
         setSupportActionBar(toolbar);
 
-        //Drawer Layout Sync
+     /*   //Drawer Layout Sync
         ActionBarDrawerToggle actionBarDrawerToggle = new ActionBarDrawerToggle(this, drawerLayout, R.string.nav_open, R.string.nav_close);
         //set nav icon color as white
         actionBarDrawerToggle.getDrawerArrowDrawable().setColor(getResources().getColor(R.color.white_90));
@@ -107,6 +104,7 @@ public class SelectionActivity extends AppCompatActivity {
             return true;
         });
 
+      */
         //Adding Selection Array Elements
         add_arrayElements();
 
@@ -124,11 +122,11 @@ public class SelectionActivity extends AppCompatActivity {
         arrayList.add(new SelectionModel(3, "Alphabet Pattern Programs"));
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.main_menu, menu);
-        return super.onCreateOptionsMenu(menu);
-    }
+//    @Override
+//    public boolean onCreateOptionsMenu(Menu menu) {
+//        getMenuInflater().inflate(R.menu.main_menu, menu);
+//        return super.onCreateOptionsMenu(menu);
+//    }
 
     @SuppressLint("NonConstantResourceId")
     @Override
