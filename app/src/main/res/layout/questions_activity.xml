@@ -24,5 +24,4 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/heading_textView"
         android:orientation="vertical" />
-
 </RelativeLayout>

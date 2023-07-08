@@ -19,5 +19,4 @@
             android:src="@drawable/app_logo_1024x1024"
             tools:ignore="ContentDescription" />
     </androidx.cardview.widget.CardView>
-
 </RelativeLayout>

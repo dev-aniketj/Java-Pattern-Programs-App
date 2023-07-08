@@ -16,7 +16,6 @@
     <color name="cyan_60">#33adff</color>
     <color name="cyan_70">#66c2ff</color>
     <color name="white_90">#e6e6e6</color>
-    
-    <color name="nav_text_color">#232323</color>
 
+    <color name="nav_text_color">#232323</color>
 </resources>

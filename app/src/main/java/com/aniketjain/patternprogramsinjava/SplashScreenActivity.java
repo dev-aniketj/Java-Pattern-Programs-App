@@ -16,7 +16,6 @@ public class SplashScreenActivity extends AppCompatActivity {
         setContentView(R.layout.activity_splash_screen);
 
         splash_screen_anim();
-
     }
 
     void splash_screen_anim() {
@@ -26,5 +25,4 @@ public class SplashScreenActivity extends AppCompatActivity {
             SplashScreenActivity.this.startActivity(intent);
         }, 1000);
     }
-
 }

@@ -88,5 +88,4 @@
             android:textSize="19sp"
             tools:ignore="HardcodedText" />
     </RelativeLayout>
-
 </RelativeLayout>
